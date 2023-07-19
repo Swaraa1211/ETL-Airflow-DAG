@@ -95,5 +95,4 @@ with DAG(
         provide_context=True,
     )
 
-
     download_task >> parse_task >> load_task
