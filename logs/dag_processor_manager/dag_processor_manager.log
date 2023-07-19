@@ -1,0 +1,102 @@
+[2023-07-19T18:10:39.385+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-07-19T18:10:39.390+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-07-19T18:10:39.404+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-07-19T18:10:39.414+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2023-07-19T18:10:39.448+0000] {manager.py:761} INFO - There are 0 files in /opt/airflow/dags
+[2023-07-19T18:15:39.498+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2023-07-19T18:15:39.589+0000] {manager.py:761} INFO - There are 1 files in /opt/airflow/dags
+[2023-07-19T18:15:42.781+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.25s           2023-07-19T18:15:39
+================================================================================
+[2023-07-19T18:16:13.283+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.21s           2023-07-19T18:16:10
+================================================================================
+[2023-07-19T18:16:43.727+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.26s           2023-07-19T18:16:40
+================================================================================
+[2023-07-19T18:17:14.227+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.23s           2023-07-19T18:17:11
+================================================================================
+[2023-07-19T18:17:44.529+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.22s           2023-07-19T18:17:41
+================================================================================
+[2023-07-19T18:18:15.058+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           0           1  0.23s           2023-07-19T18:18:12
+================================================================================
+[2023-07-19T18:18:16.142+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
+[2023-07-19T18:19:37.677+0000] {manager.py:487} INFO - Processing files using up to 2 processes at a time 
+[2023-07-19T18:19:37.692+0000] {manager.py:488} INFO - Process each file at most once every 30 seconds
+[2023-07-19T18:19:37.707+0000] {manager.py:490} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2023-07-19T18:19:37.712+0000] {manager.py:758} INFO - Searching for files in /opt/airflow/dags
+[2023-07-19T18:19:37.916+0000] {manager.py:761} INFO - There are 1 files in /opt/airflow/dags
+[2023-07-19T18:19:38.434+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/rss_feed_dag.py     31  0.29s             0           0
+================================================================================
+[2023-07-19T18:20:08.495+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           1           0  3.28s           2023-07-19T18:19:41
+================================================================================
+[2023-07-19T18:20:38.544+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           1           0  0.74s           2023-07-19T18:20:12
+================================================================================
+[2023-07-19T18:21:08.865+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           1           0  0.82s           2023-07-19T18:20:43
+================================================================================
+[2023-07-19T18:21:38.986+0000] {manager.py:889} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/rss_feed_dag.py                           1           0  0.69s           2023-07-19T18:21:14
+================================================================================
+[2023-07-19T18:21:39.506+0000] {manager.py:470} INFO - Exiting gracefully upon receiving signal 15
