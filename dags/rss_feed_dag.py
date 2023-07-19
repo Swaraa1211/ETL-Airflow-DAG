@@ -16,7 +16,6 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-
 def extract_data(**context):
     url = 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms'
     response = requests.get(url)
@@ -27,7 +26,6 @@ def extract_data(**context):
         file.write(response.text)
 
     context['task_instance'].xcom_push(key='filename', value=filename)
-
 
 def transform_data(**context):
     ti = context['task_instance']
@@ -51,23 +49,19 @@ def transform_data(**context):
 
     ti.xcom_push(key='curated_filename', value=curated_filename)
 
-
 def load_data(**context):
     ti = context['task_instance']
     curated_filename = ti.xcom_pull(key='curated_filename')
 
-    # Retrieve PostgreSQL credentials using Airflow's Variable
     postgres_user = 'airflow'
     postgres_password = 'airflow'
     postgres_db = 'airflow'
-    postgres_host = "postgres"  # Use the container service name as the host
+    postgres_host = "postgres" 
 
-    # Connection string for PostgreSQL
     conn_str = f"postgresql+psycopg2://{postgres_user}:{postgres_password}@{postgres_host}/{postgres_db}"
 
     df = pd.read_csv(curated_filename)
     df.to_sql('NEWS_FEED', conn_str, if_exists='append', index=False)
-
 
 with DAG(
     default_args=default_args,
