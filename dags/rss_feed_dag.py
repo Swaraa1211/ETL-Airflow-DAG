@@ -1,8 +1,8 @@
-from datetime import datetime, timedelta
+import csv
 import requests
 import xml.etree.ElementTree as ET
-import csv
 import pandas as pd
+from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.operators.bash_operator import BashOperator
@@ -17,8 +17,8 @@ default_args = {
 }
 
 def extract_data(**context):
-    url = 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms'
-    response = requests.get(url)
+    rssurl = 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms'
+    response = requests.get(rssurl)
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     filename = f'raw_rss_feed_{timestamp}.xml'
 
@@ -68,25 +68,29 @@ with DAG(
     dag_id='RSS_feed_dag',
     start_date=datetime(2023, 7, 19, 23, 0),
     schedule_interval='0 23 * * *',
-    schedule= None,
-)as dag:
+    schedule=None,
+) as dag:
 
-    download_task = PythonOperator(
-        task_id='Extraction',
+    start_task = DummyOperator(task_id='start_task')
+
+    extract_task = PythonOperator(
+        task_id='extract_data',
         python_callable=extract_data,
         provide_context=True,
     )
 
-    parse_task = PythonOperator(
-        task_id='Transformation',
+    transform_task = PythonOperator(
+        task_id='transform_data',
         python_callable=transform_data,
         provide_context=True,
     )
 
     load_task = PythonOperator(
-        task_id='load_to_database',
+        task_id='load_data',
         python_callable=load_data,
         provide_context=True,
     )
 
-    download_task >> parse_task >> load_task
+    end_task = DummyOperator(task_id='end_task')
+
+    start_task >> extract_task >> transform_task >> load_task >> end_task

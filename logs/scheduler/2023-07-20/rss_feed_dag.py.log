@@ -1,0 +1,154 @@
+[2023-07-20T06:49:26.287+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:26.288+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:49:26.290+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:26.289+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:27.567+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:28.023+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:28.021+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:49:28.100+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:28.099+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:49:28.170+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.893 seconds
+[2023-07-20T06:49:58.675+0000] {processor.py:157} INFO - Started process (PID=43) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:58.676+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:49:58.722+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:58.722+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:59.720+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:49:59.763+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:59.762+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:49:59.813+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:49:59.813+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:49:59.867+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.200 seconds
+[2023-07-20T06:50:30.175+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:50:30.178+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:50:30.183+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:50:30.182+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:50:31.139+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:50:31.177+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:50:31.176+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:50:31.221+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:50:31.220+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:50:31.270+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.128 seconds
+[2023-07-20T06:51:01.728+0000] {processor.py:157} INFO - Started process (PID=67) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:01.729+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:51:01.733+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:01.732+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:02.678+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:02.718+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:02.717+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:51:02.770+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:02.770+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:51:02.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.086 seconds
+[2023-07-20T06:51:33.308+0000] {processor.py:157} INFO - Started process (PID=79) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:33.309+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:51:33.312+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:33.311+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:34.229+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:51:34.285+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:34.284+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:51:34.339+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:51:34.339+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:51:34.375+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.076 seconds
+[2023-07-20T06:52:04.977+0000] {processor.py:157} INFO - Started process (PID=91) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:04.981+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:52:04.984+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:04.983+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:05.716+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:05.759+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:05.758+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:52:05.808+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:05.807+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:52:05.862+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.919 seconds
+[2023-07-20T06:52:36.752+0000] {processor.py:157} INFO - Started process (PID=103) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:36.786+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:52:36.793+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:36.792+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:38.445+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:52:38.586+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:38.585+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:52:38.646+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:52:38.645+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:52:38.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.955 seconds
+[2023-07-20T06:53:09.321+0000] {processor.py:157} INFO - Started process (PID=122) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:09.323+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:53:09.326+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:09.325+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:10.312+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:10.363+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:10.361+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:53:10.431+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:10.431+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:53:10.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.168 seconds
+[2023-07-20T06:53:40.752+0000] {processor.py:157} INFO - Started process (PID=135) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:40.755+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:53:40.758+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:40.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:41.360+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:53:41.399+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:41.398+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:53:41.434+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:53:41.434+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:53:41.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.732 seconds
+[2023-07-20T06:54:12.102+0000] {processor.py:157} INFO - Started process (PID=147) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:12.104+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:54:12.108+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:12.107+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:12.841+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:12.899+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:12.898+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:54:12.948+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:12.948+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:54:12.990+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.937 seconds
+[2023-07-20T06:54:43.636+0000] {processor.py:157} INFO - Started process (PID=158) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:43.643+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T06:54:43.646+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:43.646+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:44.394+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T06:54:44.431+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:44.430+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T06:54:44.467+0000] {logging_mixin.py:150} INFO - [2023-07-20T06:54:44.467+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T06:54:44.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.941 seconds
+[2023-07-20T07:00:40.107+0000] {processor.py:157} INFO - Started process (PID=31) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:00:40.129+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:00:40.140+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:00:40.139+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:00:40.336+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:00:40.329+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/rss_feed_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rss_feed_dag.py", line 5, in <module>
+    import feedparser
+ModuleNotFoundError: No module named 'feedparser'
+[2023-07-20T07:00:40.339+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:00:40.376+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.279 seconds
+[2023-07-20T07:01:13.257+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:13.386+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:01:13.598+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:01:13.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:14.063+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:01:14.042+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/rss_feed_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rss_feed_dag.py", line 5, in <module>
+    import feedparser
+ModuleNotFoundError: No module named 'feedparser'
+[2023-07-20T07:01:14.066+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:14.139+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.897 seconds
+[2023-07-20T07:01:44.578+0000] {processor.py:157} INFO - Started process (PID=47) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:44.580+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:01:44.583+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:01:44.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:44.788+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:01:44.759+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/rss_feed_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rss_feed_dag.py", line 5, in <module>
+    import feedparser
+ModuleNotFoundError: No module named 'feedparser'
+[2023-07-20T07:01:44.791+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:01:44.833+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.261 seconds
+[2023-07-20T07:02:15.094+0000] {processor.py:157} INFO - Started process (PID=55) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:15.196+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:02:15.248+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:02:15.248+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:15.299+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:02:15.292+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/rss_feed_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/rss_feed_dag.py", line 5, in <module>
+    import feedparser
+ModuleNotFoundError: No module named 'feedparser'
+[2023-07-20T07:02:15.302+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:15.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.461 seconds
+[2023-07-20T07:02:35.674+0000] {processor.py:157} INFO - Started process (PID=63) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:35.675+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:02:35.677+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:02:35.676+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:36.360+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:02:36.554+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:02:36.554+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T07:02:36.633+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:02:36.632+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T07:02:36.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.026 seconds
+[2023-07-20T07:03:07.292+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:07.295+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:03:07.299+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:07.298+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:08.048+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:08.091+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:08.090+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T07:03:08.129+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:08.129+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T07:03:08.164+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 0.883 seconds
+[2023-07-20T07:03:38.724+0000] {processor.py:157} INFO - Started process (PID=86) to work on /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:38.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/rss_feed_dag.py for tasks to queue
+[2023-07-20T07:03:38.734+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:38.733+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:40.186+0000] {processor.py:836} INFO - DAG(s) dict_keys(['RSS_feed_dag']) retrieved from /opt/airflow/dags/rss_feed_dag.py
+[2023-07-20T07:03:40.239+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:40.239+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-07-20T07:03:40.285+0000] {logging_mixin.py:150} INFO - [2023-07-20T07:03:40.285+0000] {dag.py:3508} INFO - Setting next_dagrun for RSS_feed_dag to None, run_after=None
+[2023-07-20T07:03:40.325+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/rss_feed_dag.py took 1.608 seconds
