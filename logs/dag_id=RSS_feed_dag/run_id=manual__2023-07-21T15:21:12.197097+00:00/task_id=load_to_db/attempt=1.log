@@ -1,0 +1,25 @@
+[2023-07-21T15:21:19.023+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:21:12.197097+00:00/task_id=load_to_db permission to 509
+[2023-07-21T15:21:19.077+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:21:12.197097+00:00/task_id=load_to_db permission to 509
+[2023-07-21T15:21:19.200+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: RSS_feed_dag.load_to_db manual__2023-07-21T15:21:12.197097+00:00 [queued]>
+[2023-07-21T15:21:19.216+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: RSS_feed_dag.load_to_db manual__2023-07-21T15:21:12.197097+00:00 [queued]>
+[2023-07-21T15:21:19.216+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-21T15:21:19.240+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): load_to_db> on 2023-07-21 15:21:12.197097+00:00
+[2023-07-21T15:21:19.247+0000] {standard_task_runner.py:57} INFO - Started process 193 to run task
+[2023-07-21T15:21:19.251+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'RSS_feed_dag', 'load_to_db', 'manual__2023-07-21T15:21:12.197097+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/saiswaroopa_rss_dag.py', '--cfg-path', '/tmp/tmp3yeo0_v_']
+[2023-07-21T15:21:19.254+0000] {standard_task_runner.py:85} INFO - Job 90: Subtask load_to_db
+[2023-07-21T15:21:19.308+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:21:12.197097+00:00/task_id=load_to_db permission to 509
+[2023-07-21T15:21:19.310+0000] {task_command.py:410} INFO - Running <TaskInstance: RSS_feed_dag.load_to_db manual__2023-07-21T15:21:12.197097+00:00 [running]> on host c02534ee6e6b
+[2023-07-21T15:21:19.646+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='RSS_feed_dag' AIRFLOW_CTX_TASK_ID='load_to_db' AIRFLOW_CTX_EXECUTION_DATE='2023-07-21T15:21:12.197097+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-21T15:21:12.197097+00:00'
+[2023-07-21T15:21:19.658+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/saiswaroopa_rss_dag.py", line 60, in load_to_db
+    with open(curated_filename, 'r', newline='') as f:
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+[2023-07-21T15:21:19.671+0000] {taskinstance.py:1350} INFO - Marking task as FAILED. dag_id=RSS_feed_dag, task_id=load_to_db, execution_date=20230721T152112, start_date=20230721T152119, end_date=20230721T152119
+[2023-07-21T15:21:19.692+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 90 for task load_to_db (expected str, bytes or os.PathLike object, not NoneType; 193)
+[2023-07-21T15:21:19.704+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-07-21T15:21:19.739+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

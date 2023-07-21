@@ -1,7 +1,7 @@
+import os
 import csv
 import requests
 import xml.etree.ElementTree as ET
-import pandas as pd
 from datetime import datetime
 import sqlite3
 from airflow import DAG
@@ -9,8 +9,8 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 
 default_args = {
-    'start_date': datetime(2023, 7, 19, 23, 0), 
-    'catchup': False 
+    'start_date': datetime(2023, 7, 19, 23, 0),
+    'catchup': False,
 }
 
 def download_rss_feed():
@@ -27,7 +27,7 @@ def download_rss_feed():
 
 def parse_rss_feed(**kwargs):
     ti = kwargs['ti']
-    filename = ti.xcom_pull(key=None, task_ids='download_rss_feed')
+    filename = ti.xcom_pull(task_ids='download_rss_feed')
     curated_filename = f"curated_{filename.replace('.xml', '.csv')}"
 
     tree = ET.parse(filename)
@@ -45,23 +45,30 @@ def parse_rss_feed(**kwargs):
         writer.writeheader()
         writer.writerows(parsed_data)
 
-    ti.xcom_push(key='curated_filename', value=curated_filename)
+    ti.xcom_push(key='curated_file_name', value=curated_filename)
 
 def load_to_db(**kwargs):
-    curated_file_name = kwargs['ti'].xcom_pull(key='curated_filename')
+    curated_file_name = kwargs['ti'].xcom_pull(key='curated_file_name')
     with open(curated_file_name, 'r', newline='') as f:
+        # Read the CSV file using csv.reader
         reader = csv.reader(f)
-        next(reader)  
-        
+        next(reader)  # Skip the header row
+
+        # Save to database
         conn = sqlite3.connect('news_feeds.db')
         c = conn.cursor()
         c.execute('''CREATE TABLE IF NOT EXISTS news_feeds (title text, link text, published text)''')
-        
+
+        # Insert each row individually
+        row_count = 0
         for row in reader:
             c.execute('''INSERT INTO news_feeds (title, link, published) VALUES (?, ?, ?)''', (row[0], row[1], row[2]))
-        
+            row_count += 1
+
         conn.commit()
         conn.close()
+
+        print(f"Inserted {row_count} rows into the 'news_feeds' table.")
 
 with DAG(
     default_args=default_args,
@@ -74,17 +81,17 @@ with DAG(
 
     download_task = PythonOperator(
         task_id='download_rss_feed',
-        python_callable=download_rss_feed
+        python_callable=download_rss_feed,
     )
 
     parse_task = PythonOperator(
         task_id='parse_rss_feed',
-        python_callable=parse_rss_feed
+        python_callable=parse_rss_feed,
     )
 
     load_task = PythonOperator(
         task_id='load_to_db',
-        python_callable=load_to_db
+        python_callable=load_to_db,
     )
 
     end_task = DummyOperator(task_id='end_task')

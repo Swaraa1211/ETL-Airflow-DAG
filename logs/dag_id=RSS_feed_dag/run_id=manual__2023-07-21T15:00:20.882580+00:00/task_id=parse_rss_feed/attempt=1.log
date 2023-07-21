@@ -1,0 +1,16 @@
+[2023-07-21T15:00:26.629+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:00:20.882580+00:00/task_id=parse_rss_feed permission to 509
+[2023-07-21T15:00:26.662+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:00:20.882580+00:00/task_id=parse_rss_feed permission to 509
+[2023-07-21T15:00:26.696+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: RSS_feed_dag.parse_rss_feed manual__2023-07-21T15:00:20.882580+00:00 [queued]>
+[2023-07-21T15:00:26.708+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: RSS_feed_dag.parse_rss_feed manual__2023-07-21T15:00:20.882580+00:00 [queued]>
+[2023-07-21T15:00:26.709+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-21T15:00:26.729+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): parse_rss_feed> on 2023-07-21 15:00:20.882580+00:00
+[2023-07-21T15:00:26.734+0000] {standard_task_runner.py:57} INFO - Started process 210 to run task
+[2023-07-21T15:00:26.737+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'RSS_feed_dag', 'parse_rss_feed', 'manual__2023-07-21T15:00:20.882580+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/saiswaroopa_rss_dag.py', '--cfg-path', '/tmp/tmpur80_3gd']
+[2023-07-21T15:00:26.740+0000] {standard_task_runner.py:85} INFO - Job 78: Subtask parse_rss_feed
+[2023-07-21T15:00:26.789+0000] {logging_mixin.py:150} INFO - Changing /opt/***/logs/dag_id=RSS_feed_dag/run_id=manual__2023-07-21T15:00:20.882580+00:00/task_id=parse_rss_feed permission to 509
+[2023-07-21T15:00:26.791+0000] {task_command.py:410} INFO - Running <TaskInstance: RSS_feed_dag.parse_rss_feed manual__2023-07-21T15:00:20.882580+00:00 [running]> on host c02534ee6e6b
+[2023-07-21T15:00:27.070+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='RSS_feed_dag' AIRFLOW_CTX_TASK_ID='parse_rss_feed' AIRFLOW_CTX_EXECUTION_DATE='2023-07-21T15:00:20.882580+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-07-21T15:00:20.882580+00:00'
+[2023-07-21T15:00:27.101+0000] {python.py:183} INFO - Done. Returned value was: curated_raw_rss_feed_20230721150025.csv
+[2023-07-21T15:00:27.135+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=RSS_feed_dag, task_id=parse_rss_feed, execution_date=20230721T150020, start_date=20230721T150026, end_date=20230721T150027
+[2023-07-21T15:00:27.191+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-21T15:00:27.230+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
